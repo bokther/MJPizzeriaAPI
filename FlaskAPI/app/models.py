@@ -1,5 +1,8 @@
 from .extensions import db, ma
 
+__all__ = ['Category', 'CategorySchema', 'category_schema', 'categories_schema',
+           ]
+
 class Category(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(128), unique=True)

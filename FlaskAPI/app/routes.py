@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify
 
 from .extensions import db
-from .models import Category, CategorySchema, category_schema, categories_schema
+from .models import *
 
 category = Blueprint('category', __name__)
 

@@ -14,4 +14,8 @@ def create_app(config_filename='config.py'):
 
     app.register_blueprint(category)
 
+    with app.app_context():
+        db.create_all()
+
     return app
+
